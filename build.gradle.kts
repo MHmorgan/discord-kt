@@ -11,10 +11,9 @@ plugins {
     id("org.jetbrains.dokka") version "1.9.20"
 
     `java-library`
-    // application // Java CLI application
 }
 
-group = "org.example"
+group = "games.soloscribe"
 
 repositories {
     mavenCentral()
@@ -24,8 +23,6 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 
-    compileOnly("org.jetbrains:annotations:26.0.2") // IDE support annotations
-
     testImplementation("org.junit.jupiter:junit-jupiter:5.12.1")
     testImplementation("org.assertj:assertj-core:3.27.3")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -34,10 +31,6 @@ dependencies {
 kotlin {
     jvmToolchain(21)
 }
-
-// application {
-//     mainClass.set("org.example.MainKt")
-// }
 
 tasks.named<Test>("test") {
     useJUnitPlatform()

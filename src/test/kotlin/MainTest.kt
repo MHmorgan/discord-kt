@@ -1,4 +1,4 @@
-package org.example
+package games.soloscribe.discord
 
 import org.junit.jupiter.api.Test
 
