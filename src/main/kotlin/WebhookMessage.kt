@@ -36,6 +36,12 @@ fun executeWebhook(url: URI, block: WebhookMessage.() -> Unit) {
     }
 }
 
+/**
+ * Build a webhook message, returning the JSON string of the message.
+ *
+ * Can be used if you want to send the message to Discord yourself.
+ * Otherwise, see [executeWebhook].
+ */
 fun webhookMessage(block: WebhookMessage.() -> Unit): String {
     val msg = WebhookMessage().apply(block)
     val dto = MessageDTO(msg)
@@ -45,14 +51,52 @@ fun webhookMessage(block: WebhookMessage.() -> Unit): String {
 @DslMarker
 annotation class WebhookDsl
 
+/**
+ * The Discord webhook message.
+ *
+ * Used with [executeWebhook] or [webhookMessage].
+ *
+ * @see https://discord.com/developers/docs/resources/webhook#execute-webhook
+ * @see executeWebhook For building and sending a webhook message.
+ * @see webhookMessage For building a webhook message.
+ */
 @WebhookDsl
 class WebhookMessage {
+    /**
+     * Override the default username of the webhook (optional).
+     */
     var username: String? = null
+
+    /**
+     * Override the default avatar of the webhook (optional).
+     */
     var avatarUrl: URI? = null
+
+    /**
+     * Name of thread to create (requires the webhook channel to
+     * be a forum or media channel).
+     */
     var threadName: String? = null
+
+    /**
+     * Array of tag IDs to apply to the thread (requires the webhook
+     * channel to be a forum or media channel).
+     */
     var appliedTags: MutableList<Snowflake> = mutableListOf()
 
+    /**
+     * True if this is a TTS (text-to-speech) message (optional).
+     */
+    var tts: Boolean? = null
+
+    /**
+     * Suppress embeds in the message (optional).
+     */
     var suppressEmbeds: Boolean = false
+
+    /**
+     * Suppress notifications for the message (optional).
+     */
     var suppressNotification: Boolean = false
 
     internal val allowedMentionsParse: MutableList<String> = mutableListOf()
@@ -60,10 +104,18 @@ class WebhookMessage {
     internal val allowedMentionsUsers: MutableList<Snowflake> = mutableListOf()
     internal var allowedMentionsRepliedUser: Boolean? = null
 
+    /**
+     * The message contents (up to 2000 characters).
+     *
+     * One of content, embeds and poll must be present.
+     */
     var content: String? = null
     internal val embeds: MutableList<Embed> = mutableListOf()
     internal var poll: Poll? = null
 
+    /**
+     * Allowed mentions for the message (optional).
+     */
     fun allowedMention(
         parse: String? = null,
         role: Snowflake? = null,
@@ -80,10 +132,18 @@ class WebhookMessage {
             allowedMentionsRepliedUser = repliedUser
     }
 
+    /**
+     * Embedded rich content (up to 10 embeds).
+     */
     fun embed(block: Embed.() -> Unit) {
         embeds += Embed().apply(block)
     }
 
+    /**
+     * A poll!
+     *
+     * One of content, embeds and poll must be present.
+     */
     fun poll(block: Poll.() -> Unit) {
         poll = Poll().apply(block)
     }
@@ -91,6 +151,8 @@ class WebhookMessage {
 
 /**
  * A builder of an embed object in Discord.
+ *
+ * Used as part of [WebhookMessage].
  *
  * @see https://discord.com/developers/docs/resources/message#embed-object
  */
@@ -218,6 +280,8 @@ class Embed {
 
 /**
  * A builder of a poll object for Discord.
+ *
+ * Used as part of [WebhookMessage].
  *
  * @see https://discord.com/developers/docs/resources/poll#poll-create-request-object
  */

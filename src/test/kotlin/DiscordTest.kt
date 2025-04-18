@@ -14,6 +14,9 @@ class DiscordTest {
             username = "test-user"
             content = "Hello, content!"
 
+            allowedMention(parse = "roles")
+            allowedMention(parse = "users")
+
             embed {
                 title = "Embed Title"
                 description = "Embed Description"

@@ -13,40 +13,14 @@ import kotlinx.serialization.json.Json
  */
 @Serializable
 internal data class MessageDTO(
-    /**
-     * The message contents (up to 2000 characters).
-     *
-     * One of content, embeds and poll must be present.
-     */
     val content: String? = null,
-
-    /**
-     * Override the default username of the webhook (optional).
-     */
     val username: String? = null,
-
-    /**
-     * Override the default avatar of the webhook (optional).
-     */
     @SerialName("avatar_url")
     val avatarUrl: String? = null,
-
-    /**
-     * True if this is a TTS (text-to-speech) message (optional).
-     */
     val tts: Boolean? = null,
-
-    /**
-     * Embedded rich content (up to 10 embeds).
-     */
     val embeds: List<EmbedDTO>? = null,
-
-    /**
-     * Allowed mentions for the message (optional).
-     */
     @SerialName("allowed_mentions")
     val allowedMentions: AllowedMentionsDTO? = null,
-
     /**
      * Message flags combined as a bitfield (optional).
      *
@@ -54,26 +28,10 @@ internal data class MessageDTO(
      * (`1 << 12`) can be set.
      */
     val flags: Int? = null,
-
-    /**
-     * Name of thread to create (requires the webhook channel to
-     * be a forum or media channel).
-     */
     @SerialName("thread_name")
     val threadName: String? = null,
-
-    /**
-     * Array of tag IDs to apply to the thread (requires the webhook
-     * channel to be a forum or media channel).
-     */
     @SerialName("applied_tags")
     val appliedTags: List<String>? = null,
-
-    /**
-     * A poll!
-     *
-     * One of content, embeds and poll must be present.
-     */
     val poll: PollDTO? = null,
 ) {
     init {
@@ -89,6 +47,7 @@ internal data class MessageDTO(
         content = msg.content,
         username = msg.username,
         avatarUrl = msg.avatarUrl?.toString(),
+        tts = msg.tts,
         embeds = msg.embeds.map { EmbedDTO(it) },
         allowedMentions = AllowedMentionsDTO(
             parse = msg.allowedMentionsParse.ifEmpty { null },

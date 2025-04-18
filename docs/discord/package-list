@@ -1,0 +1,46 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:games.soloscribe.discord////PointingToDeclaration/discord/games.soloscribe.discord/index.md
+$dokka.location:games.soloscribe.discord//executeWebhook/#java.net.URI#kotlin.Function1[games.soloscribe.discord.WebhookMessage,kotlin.Unit]/PointingToDeclaration/discord/games.soloscribe.discord/execute-webhook.md
+$dokka.location:games.soloscribe.discord//webhookMessage/#kotlin.Function1[games.soloscribe.discord.WebhookMessage,kotlin.Unit]/PointingToDeclaration/discord/games.soloscribe.discord/webhook-message.md
+$dokka.location:games.soloscribe.discord/Embed///PointingToDeclaration/discord/games.soloscribe.discord/-embed/index.md
+$dokka.location:games.soloscribe.discord/Embed/Embed/#/PointingToDeclaration/discord/games.soloscribe.discord/-embed/-embed.md
+$dokka.location:games.soloscribe.discord/Embed/addField/#kotlin.String#kotlin.String#kotlin.Boolean/PointingToDeclaration/discord/games.soloscribe.discord/-embed/add-field.md
+$dokka.location:games.soloscribe.discord/Embed/author/#kotlin.String#java.net.URI?#java.net.URI?#java.net.URI?/PointingToDeclaration/discord/games.soloscribe.discord/-embed/author.md
+$dokka.location:games.soloscribe.discord/Embed/color/#/PointingToDeclaration/discord/games.soloscribe.discord/-embed/color.md
+$dokka.location:games.soloscribe.discord/Embed/description/#/PointingToDeclaration/discord/games.soloscribe.discord/-embed/description.md
+$dokka.location:games.soloscribe.discord/Embed/footer/#kotlin.String#java.net.URI#java.net.URI?/PointingToDeclaration/discord/games.soloscribe.discord/-embed/footer.md
+$dokka.location:games.soloscribe.discord/Embed/image/#java.net.URI#java.net.URI?#kotlin.Int?#kotlin.Int?/PointingToDeclaration/discord/games.soloscribe.discord/-embed/image.md
+$dokka.location:games.soloscribe.discord/Embed/provider/#kotlin.String#java.net.URI?/PointingToDeclaration/discord/games.soloscribe.discord/-embed/provider.md
+$dokka.location:games.soloscribe.discord/Embed/thumbnail/#java.net.URI#java.net.URI?#kotlin.Int?#kotlin.Int?/PointingToDeclaration/discord/games.soloscribe.discord/-embed/thumbnail.md
+$dokka.location:games.soloscribe.discord/Embed/timestamp/#/PointingToDeclaration/discord/games.soloscribe.discord/-embed/timestamp.md
+$dokka.location:games.soloscribe.discord/Embed/title/#/PointingToDeclaration/discord/games.soloscribe.discord/-embed/title.md
+$dokka.location:games.soloscribe.discord/Embed/url/#/PointingToDeclaration/discord/games.soloscribe.discord/-embed/url.md
+$dokka.location:games.soloscribe.discord/Embed/video/#java.net.URI#java.net.URI?#kotlin.Int?#kotlin.Int?/PointingToDeclaration/discord/games.soloscribe.discord/-embed/video.md
+$dokka.location:games.soloscribe.discord/Poll///PointingToDeclaration/discord/games.soloscribe.discord/-poll/index.md
+$dokka.location:games.soloscribe.discord/Poll/Poll/#/PointingToDeclaration/discord/games.soloscribe.discord/-poll/-poll.md
+$dokka.location:games.soloscribe.discord/Poll/addAnswer/#kotlin.String#games.soloscribe.discord.Snowflake?#kotlin.String?/PointingToDeclaration/discord/games.soloscribe.discord/-poll/add-answer.md
+$dokka.location:games.soloscribe.discord/Poll/allowMultiselect/#/PointingToDeclaration/discord/games.soloscribe.discord/-poll/allow-multiselect.md
+$dokka.location:games.soloscribe.discord/Poll/duration/#/PointingToDeclaration/discord/games.soloscribe.discord/-poll/duration.md
+$dokka.location:games.soloscribe.discord/Poll/question/#/PointingToDeclaration/discord/games.soloscribe.discord/-poll/question.md
+$dokka.location:games.soloscribe.discord/Snowflake///PointingToDeclaration/discord/games.soloscribe.discord/-snowflake/index.md
+$dokka.location:games.soloscribe.discord/Snowflake/Snowflake/#kotlin.String/PointingToDeclaration/discord/games.soloscribe.discord/-snowflake/-snowflake.md
+$dokka.location:games.soloscribe.discord/Snowflake/Snowflake/#kotlin.UInt/PointingToDeclaration/discord/games.soloscribe.discord/-snowflake/-snowflake.md
+$dokka.location:games.soloscribe.discord/Snowflake/Snowflake/#kotlin.ULong/PointingToDeclaration/discord/games.soloscribe.discord/-snowflake/-snowflake.md
+$dokka.location:games.soloscribe.discord/Snowflake/id/#/PointingToDeclaration/discord/games.soloscribe.discord/-snowflake/id.md
+$dokka.location:games.soloscribe.discord/WebhookDsl///PointingToDeclaration/discord/games.soloscribe.discord/-webhook-dsl/index.md
+$dokka.location:games.soloscribe.discord/WebhookMessage///PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/index.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/WebhookMessage/#/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/-webhook-message.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/allowedMention/#kotlin.String?#games.soloscribe.discord.Snowflake?#games.soloscribe.discord.Snowflake?#kotlin.Boolean?/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/allowed-mention.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/appliedTags/#/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/applied-tags.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/avatarUrl/#/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/avatar-url.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/content/#/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/content.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/embed/#kotlin.Function1[games.soloscribe.discord.Embed,kotlin.Unit]/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/embed.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/poll/#kotlin.Function1[games.soloscribe.discord.Poll,kotlin.Unit]/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/poll.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/suppressEmbeds/#/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/suppress-embeds.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/suppressNotification/#/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/suppress-notification.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/threadName/#/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/thread-name.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/tts/#/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/tts.md
+$dokka.location:games.soloscribe.discord/WebhookMessage/username/#/PointingToDeclaration/discord/games.soloscribe.discord/-webhook-message/username.md
+games.soloscribe.discord
+
