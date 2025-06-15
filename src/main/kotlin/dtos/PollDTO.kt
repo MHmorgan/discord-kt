@@ -1,6 +1,6 @@
-package games.soloscribe.discord.dtos
+package dev.hirth.discord.dtos
 
-import games.soloscribe.discord.Poll
+import dev.hirth.discord.Poll
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

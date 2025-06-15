@@ -1,10 +1,10 @@
 @file:Suppress("NAME_SHADOWING")
 
-package games.soloscribe.discord
+package dev.hirth.discord
 
-import games.soloscribe.discord.dtos.EmbedDTO
-import games.soloscribe.discord.dtos.MessageDTO
-import games.soloscribe.discord.dtos.PollDTO
+import dev.hirth.discord.dtos.EmbedDTO
+import dev.hirth.discord.dtos.MessageDTO
+import dev.hirth.discord.dtos.PollDTO
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest

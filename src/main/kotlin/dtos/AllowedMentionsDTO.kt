@@ -1,4 +1,4 @@
-package games.soloscribe.discord.dtos
+package dev.hirth.discord.dtos
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

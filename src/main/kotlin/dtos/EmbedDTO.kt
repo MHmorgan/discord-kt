@@ -1,6 +1,6 @@
-package games.soloscribe.discord.dtos
+package dev.hirth.discord.dtos
 
-import games.soloscribe.discord.Embed
+import dev.hirth.discord.Embed
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import java.time.format.DateTimeFormatter
