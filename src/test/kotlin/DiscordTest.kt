@@ -1,4 +1,4 @@
-package games.soloscribe.discord
+package dev.hirth.discord
 
 import org.junit.jupiter.api.Test
 import java.net.URI

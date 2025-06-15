@@ -1,6 +1,6 @@
-package games.soloscribe.discord.dtos
+package dev.hirth.discord.dtos
 
-import games.soloscribe.discord.WebhookMessage
+import dev.hirth.discord.WebhookMessage
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
